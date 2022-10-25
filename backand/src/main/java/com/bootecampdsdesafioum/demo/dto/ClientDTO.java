@@ -1,7 +1,6 @@
 package com.bootecampdsdesafioum.demo.dto;
 
 import java.io.Serializable;
-import java.time.Instant;
 import java.util.Date;
 
 import com.bootecampdsdesafioum.demo.entities.Client;
@@ -15,8 +14,6 @@ public class ClientDTO implements Serializable {
 	private Double income;
 	private Date birthDate;
 	private Integer children;
-	private Instant createdAt;
-	private Instant updatedAt;
 
 	public ClientDTO() {
 	}
@@ -29,17 +26,15 @@ public class ClientDTO implements Serializable {
 		this.birthDate = birthDate;
 		this.children = children;
 	}
-	
+
 	public ClientDTO(Client entity) {
 		this.name = entity.getName();
 		this.cpf = entity.getCpf();
 		this.income = entity.getIncome();
 		this.birthDate = entity.getBirthDate();
 		this.children = entity.getChildren();
-		this.createdAt = entity.getCreatedAt();
-		this.updatedAt = entity.getUpdatedAt();
+
 	}
-	
 
 	public Long getId() {
 		return id;
@@ -87,14 +82,6 @@ public class ClientDTO implements Serializable {
 
 	public void setChildren(Integer children) {
 		this.children = children;
-	}
-
-	public Instant getCreatedAt() {
-		return createdAt;
-	}
-
-	public Instant getUpdatedAt() {
-		return updatedAt;
 	}
 
 }
