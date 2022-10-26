@@ -2,6 +2,7 @@ package com.bootecampdsdesafioum.demo.resource;
 
 import java.net.URI;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
@@ -24,6 +25,7 @@ import com.bootecampdsdesafioum.demo.services.ClientService;
 @RequestMapping(value = "/clients")
 public class ClientResource {
 
+	@Autowired
 	private ClientService service;
 
 	@GetMapping
@@ -49,6 +51,7 @@ public class ClientResource {
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(dto.getId()).toUri();
 		return ResponseEntity.created(uri).body(dto);
 	}// INSERIR CLIENT
+	
 
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<ClientDTO> update(@PathVariable Long id, @RequestBody ClientDTO dto) {

@@ -30,6 +30,7 @@ public class ClientService {
 		return list.map(x -> new ClientDTO(x));
 	}// BUSCA PAGINADA
 
+	@Transactional(readOnly = true)
 	public ClientDTO findById(Long id) {
 		Optional<Client> obj = repository.findById(id);
 		Client entity = obj.orElseThrow(() -> new ClientNotFoundException("Entity not found" + id));
@@ -37,14 +38,15 @@ public class ClientService {
 
 	}// BUSCA POR ID
 
+	@Transactional
 	public ClientDTO insert(ClientDTO dto) {
 
 		Client entity = new Client();
-		entity.getName();
-		entity.getCpf();
-		entity.getBirthDate();
-		entity.getIncome();
-		entity.getChildren();
+		entity.setName(dto.getName());;
+		entity.setCpf(dto.getCpf());
+		entity.setBirthDate(dto.getBirthDate());
+		entity.setIncome(dto.getIncome());
+		entity.setChildren(dto.getChildren());
 
 		entity = repository.save(entity);
 		return new ClientDTO(entity);
@@ -62,6 +64,7 @@ public class ClientService {
 		}
 	}
 
+	
 	public void delete(Long id) {
 		try {
 			repository.deleteById(id);

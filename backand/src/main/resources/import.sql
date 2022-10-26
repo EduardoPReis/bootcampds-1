@@ -1,22 +1,20 @@
-INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES 
-('Eduardo Reis', '32244100000', 3000,'1994-06-18', 0),
-('Flávia Rocha', '32244122222', 2000,'1991-09-12', 0),
-('Pedro Reis', '32244133333', 3500,'1999-04-03', 0),
-('Ana Reis', '32244144444', 9000,'1978-05-06', 2),
-('Hilda Reis', '32244155555', 13000,'1933-06-30', 12),
-('Joana D´arc', '32244166666', 1000,'1960-09-18', 0),
-('Juca Tiger', '32244177777', 3999,'1955-10-18', 1),
-('Jorge Matheus', '32244188888', 10000,'1968-09-15', 2),
-('Gustavo Lucca', '32244199999', 4000,'1988-05-01', 0),
-('Gianlucca Piva', '0000000000', 2000,'1987-09-18', 0),
-('George Henrique', '9999900000', 3900,'1996-06-18', 5),
-('Fábio Santos', '8888800000', 3600,'1982-07-10', 0),
-('Fernanda Marinho', '7777700000', 4500,'1982-08-26', 1),
-('Beatriz Marinho', '666600000', 5500,'2012-01-18', 0),
-('Cláudio Marinho', '5555500000', 8000,'1978-04-04', 1),
-('Paula Rocha', '44444100000', 7000,'1956-01-13', 2),
-('Eraldo Reis', '3333300000', 5000,'1972-08-27', 1),
-('Juninho Junior', '2222200000', 1500,'1997-03-20', 1),
-('Messias Reis', '1111100000', 3000,'1946-09-13', 12);
-
-	
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Eduardo Reis', '32244100000', 10000,TIMESTAMP WITH TIME ZONE'1994-06-18T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Flávia Rocha', '11111111111', 6000,TIMESTAMP WITH TIME ZONE'1991-09-12T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Edvaldo Reis', '33333333333', 12000,TIMESTAMP WITH TIME ZONE'1970-11-10T10:30:00Z', 2);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('João Pedro Reis', '22222222222', 3800,TIMESTAMP WITH TIME ZONE'1999-04-04T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Paula Rocha', '32244125434', 7000,TIMESTAMP WITH TIME ZONE'1956-01-13T10:30:00Z', 2);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Fernanda Marinho', '52345234234', 8000,TIMESTAMP WITH TIME ZONE'1982-08-26T10:30:00Z', 1);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Cláudio Marinho', '34532464566', 3000,TIMESTAMP WITH TIME ZONE'1978-04-05T10:30:00Z', 1);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Beatriz Marinho', '21345345341', 1200,TIMESTAMP WITH TIME ZONE'2012-01-20T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Edson Junior', '21342355542', 5500,TIMESTAMP WITH TIME ZONE'1979-01-02T12:30:00Z', 1);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Gian Lucca ', '43214535264', 5000,TIMESTAMP WITH TIME ZONE'1985-11-18T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Hilda Reis', '67468768946', 3200,TIMESTAMP WITH TIME ZONE'1933-06-30T10:30:00Z', 12);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Messias Reis', '45784657946', 13000,TIMESTAMP WITH TIME ZONE'1930-08-18T10:30:00Z', 12);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Toinho Reis', '23463584875', 43000,TIMESTAMP WITH TIME ZONE'1997-09-12T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Juca Tigre', '32244634673', 4000,TIMESTAMP WITH TIME ZONE'1994-06-18T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Donk Kong', '32244100067', 3500,TIMESTAMP WITH TIME ZONE'1994-06-18T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Bruce wayne', '32244100054', 3020,TIMESTAMP WITH TIME ZONE'1994-06-18T10:30:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Clóvis Bornai', '32244100032', 13000,TIMESTAMP WITH TIME ZONE'1934-09-13T10:35:00Z', 0);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Clóvis Basilio', '32244100055', 12000,TIMESTAMP WITH TIME ZONE'1960-09-18T10:30:00Z', 30);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Neymar Júnior', '32244100066', 22233000,TIMESTAMP WITH TIME ZONE'1993-10-25T03:30:00Z', 1);
+INSERT INTO tb_client (name, cpf, income,birth_Date, children) VALUES ('Ana Reis', '32244100066', 22233000,TIMESTAMP WITH TIME ZONE'1978-05-06T03:30:00Z', 2);
